@@ -1,5 +1,5 @@
 const io = require("socket.io");
-require("./db/index");
+const db = require("./db/index");
 const server = io.listen(process.env.PORT);
 
 var welcome = require("./controller/welcome");
