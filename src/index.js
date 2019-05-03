@@ -1,5 +1,5 @@
 const io = require("socket.io");
-const server = io.listen(3000);
+const server = io.listen(process.env.PORT);
 
 var welcome = require("./controller/welcome");
 var user = require("./controller/user");
